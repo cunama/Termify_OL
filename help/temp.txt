@@ -1,0 +1,36 @@
+Privacy Policy for Termify
+
+Effective Date: 2025 April 6th
+
+At Termify, we value and respect the privacy of our users. This Privacy Policy explains how we handle personal information when you use our application, which is designed to be a local-use Microsoft Word Add-in. Please read this policy carefully to understand how your information is handled.
+
+1. Information We Collect
+
+Termify does not collect, store, or transmit any personal information. As a local-use add-in for Microsoft Word, all functionalities operate within the Word application itself on your device. No user data is sent to the internet or any external servers. The add-in operates entirely offline and does not gather or process any personal data.
+
+2. Data Storage and Usage
+
+Since Termify operates as a local-use Microsoft Word add-in, no personal data or user information is collected, stored, or shared by the app. All the processing occurs on your local machine, ensuring complete privacy and security. We do not store any user input, documents, or other information once the application is closed.
+
+3. No Data Sharing
+
+Termify does not share any information with third parties. Since no data is transmitted to external servers, there is no risk of information being shared or used outside of the local environment where Termify is installed.
+
+4. Your Privacy Rights
+
+As Termify does not collect or store any personal information, there is no need for users to exercise privacy rights under data protection regulations (e.g., GDPR, CCPA). However, if you have any concerns or inquiries about privacy, please feel free to contact us using the information provided below.
+
+5. Security
+
+We take your privacy seriously. Since Termify does not collect or send any personal data, there is no risk of unauthorized access to such data. The add-in functions entirely on your local machine without the need for internet connectivity.
+
+6. Changes to This Privacy Policy
+
+We may update this Privacy Policy from time to time to reflect changes in how we handle privacy-related matters. Any updates will be posted on this page, and the effective date will be updated accordingly.
+
+7. Contact Information
+
+If you have any questions or concerns about this Privacy Policy or how your privacy is handled, please feel free to contact us at:
+
+Barry Liang
+cunama3000@hotmail.com
