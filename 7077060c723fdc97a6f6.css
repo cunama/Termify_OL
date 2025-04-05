@@ -1,0 +1,76 @@
+/* 
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+/* Reset body margins and padding */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+/* Header style */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #4C4C4C;
+    margin-bottom: 20px;
+}
+
+/* General button style */
+button {
+    min-width: 250px;
+    font-size: 16px;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    color: white;
+    background: linear-gradient(45deg, #6a82fb, #fc5c7d); /* Gradient color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effect */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Button active effect */
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific button styles for each button */
+#highlight-terms {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Warm gradient */
+}
+
+#sort-terms {
+    background: linear-gradient(45deg, #56ccf2, #2f80ed); /* Cool blue gradient */
+}
+
+#edit-selected {
+    background: linear-gradient(45deg, #ff9a8b, #ff6a00); /* Orange gradient */
+}
+
+/* Add padding and center alignment */
+button:focus {
+    outline: none;
+}
+
+/* Add spacing between buttons */
+button + button {
+    margin-top: 10px;
+}
+
+/* Add spacing between header and first button */
+h2 + button {
+    margin-top: 30px;
+}

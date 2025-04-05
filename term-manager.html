@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Term Manager</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <script>
+    Office.initialize = function () {
+      console.log("📦 Dialog page initialized");
+    };
+  </script>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    #term-list {
+      margin-top: 10px;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    #term-list th, #term-list td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    #term-list th {
+      background-color: #f0f0f0;
+    }
+    button {
+      margin-top: 20px;
+      padding: 8px 12px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Identified Terms</h2>
+  <table id="term-list">
+    <thead>
+      <tr>
+        <th>Term</th>
+        <th>Keyword</th>
+        <th>Definition</th>
+      </tr>
+    </thead>
+    <tbody id="term-table-body">
+    </tbody>
+  </table>
+
+  <button onclick="closeDialog()">⬅ Return to main panel</button>
+
+  <script>
+    const terms = JSON.parse(localStorage.getItem("identifiedTerms") || "[]");
+    const tbody = document.getElementById("term-table-body");
+
+    terms.forEach(item => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${item.term || ""}</td>
+        <td>${item.keyword || ""}</td>
+        <td contenteditable="true" style="background-color: #fff;">${item.note || ""}</td>
+      `;
+      tbody.appendChild(row);
+    });
+
+    function closeDialog() {
+      Office.context.ui.messageParent("close");
+    }
+  </script>
+</body>
+</html>
